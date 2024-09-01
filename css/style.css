@@ -1,0 +1,381 @@
+/* CORES SEPARADAS EM VARIAVEIS  */
+
+:root {
+    --verde-escuro: #3D6B35;
+    --amarelo-ouro: #FFD700;
+    --vermelho-terra: #B03060;
+    --azul-marinho: #003366;
+    --bege-suave: #F5DEB3;
+  }
+
+
+
+
+/* INICIO DO HEADER */
+
+
+
+/* INICIO DA NAV */
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    height: 100px;
+    width: 100%;
+    background-color: var(--verde-escuro);
+    top: 0;
+    position: sticky;
+    z-index: 999;
+}
+
+.navbar div img{
+    max-width: 150px;
+    max-height: 90px;
+}
+
+.ul-navbar{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 20px;
+}
+
+.ul-navbar li a{
+    color: #838d8f;
+    text-decoration: none;
+    color: var(--amarelo-ouro); 
+    -webkit-text-stroke: 1px rgba(255, 215, 0, 0.4); 
+    text-shadow: 0px 2px 4px rgba(255, 215, 0, 0.4); 
+}
+
+.ul-navbar li a:hover{
+    color: #ffffff;
+}
+/* FIM DA NAV */
+
+/* INICIO DO BANNER */
+
+header{
+    width: 100%;
+    height: 750px;
+}
+
+.slider{
+    margin: 0 auto;
+    width: 100%;
+    height: 750px;
+    overflow: hidden;
+}
+.slides{
+    width: 400%;
+    height: 750px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 25%;
+    position: relative;
+}
+
+.inter-slide{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 750px;
+    background-position: center;
+    background-size: cover;
+}
+
+#inter-slide0{
+    background-image: url("/img/churrasco.jpg");
+}
+#inter-slide2{
+    background-image: url("/img/feijoada.jpg");
+}
+#inter-slide3{
+    background-image: url("/img/saladadeovo.jpg");
+}
+
+.inter-slide h2{
+    color: #FFFFFF; /* Cor do texto principal (Branco) */
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.4); /* Contorno do texto em Branco */
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4); /* Sombra do texto em Branco */
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.inter-slide p{
+    color: #FFFFFF; /* Cor do texto principal (Branco) */
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.4); /* Contorno do texto em Branco */
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4); /* Sombra do texto em Branco */
+    text-align: center;
+    font-size: 2rem;
+}
+
+.slide img{
+    width: 100%;
+}
+
+.manual-mavigation{
+    position: absolute;
+    width: 100%;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid #ffffff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background-color: #fff;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+
+.navigation-auto div{
+    border: 2px solid var(--azul-marinho);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.navigation-auto{
+    position: absolute;
+    width: 100%;
+    margin-top: 710px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: white;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: white;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: white;
+}
+
+/* FIM DO HEADER */
+
+
+/* INICIO DA MAIN */
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--verde-escuro);
+    height: 100%;
+}
+
+/* INICIO DO SOBRE */
+
+.section-sobre{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    gap: 20px;
+    background-color: var(--bege-suave);
+    margin: 10px;
+    border-radius: 10px;
+    max-height: 600px;
+    max-width: 1500px;
+}
+
+.img-sobre{
+    flex: 1;
+    height: 70%;
+}
+
+.img-sobre img{
+    width: 100%;
+    max-height: 500px;
+    border-radius: 10px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.text-sobre{
+    flex: 1;
+    width: 30%;
+}
+
+.text-sobre h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.text-sobre p{
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+
+
+
+/* INICIO DO FORMULARIO DE PEDIDOS ONLINE */
+
+
+.formulario-de-pedido{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    max-width: 600px;
+    height: 750px;
+    margin: 30px;
+    gap: 10px;
+    background-color: var(--verde-escuro);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.formulario-de-pedido h2{
+    color: #000000;
+    font-size: 2rem;
+}
+
+.formulario-de-pedido p{
+    color: #000000;
+    font-size: 1rem;
+}
+
+.formulario-de-pedido form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+
+    gap: 10px;
+    background-color: var(--bege-suave);
+    border-radius: 10px;
+    padding: 20px;
+    color: #000000;
+}
+
+.formulario-de-pedido label{
+    color: #000000;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.formulario-de-pedido input{
+    padding: 3px;
+    border-radius: 5px;
+    border: none;
+}
+
+.formulario-de-pedido select{
+    padding: 3px;
+    border-radius: 5px;
+    border: none;
+}
+
+
+.div-textarea{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.div-textarea textarea{
+    width: 100%;
+    height: 200px;
+    resize: none;
+    border: 1px solid var(--verde-escuro);
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #003366;
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.4);
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.formulario-de-pedido button{
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--verde-escuro);
+    color: #000000;
+    cursor: pointer;
+    transition: 1s;
+}
+
+/* FIM DA PEDIDO */
+
+
+
+@media (max-width: 800px) {
+    .section-sobre {
+        flex-direction: column; 
+        align-items: stretch; 
+        overflow: hidden;
+        min-height: 900px;
+    }
+
+    .img-sobre,
+    .text-sobre {
+        width: 100%;
+        height: auto; 
+    }
+
+    .img-sobre {
+        margin: 0; 
+        padding: 0;
+        border-radius: 10px; 
+    }
+
+    .text-sobre {
+        padding: 20px; 
+    }
+
+    .formulario-de-pedido{
+        max-height: 1600px;
+        max-width: 300px;
+        margin: 10px;
+        gap: 5px;
+    }
+}

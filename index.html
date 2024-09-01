@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- INICIO DO CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/global.css">
+
+    <!-- INICIO DA FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- INICIO DO TITULO -->
+    <title>Restaurante Sabor Brasileiro - Peça Online</title>
+</head>
+
+<body>
+
+    <!-- INICIO DO HEADER -->
+    <nav class="navbar">
+        <div>
+            <img src="/img/logo-300x188.png" alt="">
+        </div>
+        <ul class="ul-navbar">
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Sobre Nós</a></li>
+            <li><a href="#">Peça Online</a></li>
+        </ul>
+    </nav>
+    <header>
+        <div class="slider">
+
+            <div class="slides">
+
+                <!-- radio btn -->
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <!-- fim radio buttons -->
+
+                <!-- slide img -->
+                <div class="slide first">
+                    <div id="inter-slide0" class="inter-slide">
+                        <h2>O Melhor do Churrasco Brasileiro</h2>
+                        <p>Sabores autênticos, cortes selecionados e tradição em cada pedaço.</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div id="inter-slide2" class="inter-slide">
+                        <h2>Feijoada: Um Clássico Brasileiro</h2>
+                        <p>A verdadeira feijoada, preparada com carinho e os melhores ingredientes.</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div id="inter-slide3" class="inter-slide">
+                        <h2>Descubra Nosso Cardápio</h2>
+                        <p>Pratos que celebram a rica culinária do Brasil, prontos para você saborear.</p>
+                    </div>
+                </div>
+                <!-- fim da imagem -->
+
+                <!-- navigation-auto -->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                </div>
+            </div>
+
+            <dvi class="manual-mavigation">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+            </dvi>
+
+        </div>
+        <!-- fim do slider -->
+    </header>
+    <!-- FIM DO HEADER -->
+
+    <!-- INICIO DA MAIN -->
+    <main>
+
+
+        <section class="section-sobre">
+            <div class="img-sobre">
+                <img src="/img/sobre.jpg" alt="">
+            </div>
+            <div class="text-sobre">
+                <h2>Sobre Nós</h2>
+                <p>O Restaurante Sabor Brasileiro proporciona uma jornada gastronômica inesquecível, destacando o melhor da culinária tradicional brasileira. Desde pratos autênticos como feijoada e moqueca até especialidades regionais, cada refeição é preparada com ingredientes frescos e com muito carinho. Venha nos visitar para uma experiência completa ou faça seu pedido online e leve o sabor do Brasil para a sua casa. Sua satisfação é nossa prioridade!</p>
+            </div>
+
+        </section>
+
+
+
+        <!-- INICIO DO PEDIDO ONLINE -->
+        <section class="formulario-de-pedido">
+            <h2>Faça Seu Pedido Online</h2>
+            <p>Faça seu pedido online e receba um prato personalizado com sabor único.</p>
+            <form action="send">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+            
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco" name="endereco" required>
+            
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required>
+            
+                <label for="pratos">Seleção de Pratos:</label>
+                <select id="pratos" name="pratos" required>
+                    <option value="feijoada">Feijoada</option>
+                    <option value="moqueca">Moqueca</option>
+                    <option value="pao-de-queijo">Pão de Queijo</option>
+                    <option value="churrasco">Churrasco</option>
+                    <option value="acaraje">Acarajé</option>
+                </select>
+            
+                <label for="pagamento">Método de Pagamento:</label>
+                <div id="pagamento">
+                    <input type="radio" id="cartao" name="pagamento" value="cartao" required>
+                    <label for="cartao">Cartão de Crédito</label><br>
+                    <input type="radio" id="dinheiro" name="pagamento" value="dinheiro" required>
+                    <label for="dinheiro">Dinheiro</label><br>
+                    <input type="radio" id="pix" name="pagamento" value="pix" required>
+                    <label for="pix">Pix</label>
+                </div>
+                
+                <div class="div-textarea">
+                    <label for="instrucoes">Instruções Especiais:</label>
+                    <textarea id="instrucoes" name="instrucoes"></textarea>
+                </div>
+            
+                <button type="submit">Enviar Pedido</button>
+            </form>
+        </section>
+    </main>
+
+
+
+
+
+
+
+
+
+    <!-- SCRIPT.JS -->
+    <script src="/js/script.js"></script>
+</body>
+
+</html>

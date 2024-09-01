@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+    /* background: linear-gradient(to bottom, #3D6B35, #F5DEB3); */
+}
+
+html {
+    scroll-behavior: smooth;
+  }
